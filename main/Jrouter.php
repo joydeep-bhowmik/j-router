@@ -1,5 +1,17 @@
 <?php
-//tested
+
+#
+#
+# J router
+# https://github.com/joydeep-bhowmik/j-router
+#
+# (c) Joydeep Bhowmik
+# https://github.com/joydeep-bhowmik/j-router/blob/main/LICENSE
+#
+# For the full license information, view the LICENSE file that was distributed
+# with this source code.
+#
+#
 class Route{
     public static $params=[];
     public static $queryParams=[];

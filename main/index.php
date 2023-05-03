@@ -1,5 +1,5 @@
 <?php
-require('router.php');
+require('Jrouter.php');
 $data=['method'=>"",'text'=>''];
 Route::$base='/php-router';
 Route::get('/home','includable.php');

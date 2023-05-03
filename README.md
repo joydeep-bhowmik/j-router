@@ -14,6 +14,7 @@ RewriteRule ^ index.php [L]
 ```
 ### index.php
 ```PHP
+require('Jrouter.php');
 Route::get('/home',function(){
     echo 'Home';
 });

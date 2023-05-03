@@ -95,3 +95,8 @@ Route::any('/path',function() use ($r){
     echo $r;
 });
 ```
+## Query Params
+Instead of using `$_GET['param']` or `$_GET['param']` or to access `PUT` and `DELETE` parameters you can use
+```php
+Route::$queryParams['param'];
+```

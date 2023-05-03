@@ -88,7 +88,7 @@ Route::any('/path',function(){
     echo g('r');
 });
 ```
-### using use
+### Using use
 ```php
 $r=1;
 Route::any('/path',function() use ($r){

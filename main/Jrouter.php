@@ -2,10 +2,15 @@
 //tested
 class Route{
     public static $params=[];
+    public static $queryParams=[];
     public static $base="";
     public static $data=[];
     protected static $routes=[];
     protected static $staticRoutes=[];
+    public static function readyQueryParams(){
+        parse_str(file_get_contents("php://input"),self::$queryParams);
+        self::$queryParams=array_merge(self::$queryParams,$_POST,$_GET); 
+    }
     public static function render($name,$content=null){
         if(isset($content)){
             route::$data[$name]=$content;
@@ -164,6 +169,7 @@ class Route{
         $success($content);
     }
 }
+Route::readyQueryParams();
 function g($str){
     return $GLOBALS[$str];
 }

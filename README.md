@@ -80,3 +80,18 @@ In `user.php` you can write.
 <p> Your id is  <?php echo Route::$params['id'];?></p>
 
 ```
+## Access global variables
+### Using g()
+```php
+$r=1;
+Route::any('/path',function(){
+    echo g('r');
+});
+```
+### using use
+```php
+$r=1;
+Route::any('/path',function() use ($r){
+    echo $r;
+});
+```

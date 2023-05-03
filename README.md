@@ -59,6 +59,14 @@ Route::for(['post','get'],'/path',function(){
     #codes
 });
 ```
+
+### * Defaut
+```PHP
+Route::any('*',function(){
+    echo '404';
+});
+```
+
 ## Dynamic url
 
 ```PHP

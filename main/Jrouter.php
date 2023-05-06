@@ -84,19 +84,19 @@ class Route{
         foreach($methods as $method){
             switch (strtolower($method)) {
                 case 'post':
-                    route::post($path,$callback);
+                    self::post($path,$callback);
                     break;
                 case 'get':
-                    route::get($path,$callback);
+                    self::get($path,$callback);
                     break;
                 case 'put':
-                    route::put($path,$callback);
+                    self::put($path,$callback);
                     break;
                 case 'delete':
-                    route::delete($path,$callback);
+                    self::delete($path,$callback);
                     break;
                 default:
-                    route::any($path,$callback);
+                    self::any($path,$callback);
                     break;
             }
         }

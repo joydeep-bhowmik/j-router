@@ -18,6 +18,8 @@ require('Jrouter.php');
 Route::get('/home',function(){
     echo 'Home';
 });
+
+Route::get('/profile','profile.php');
 ```
 ## Methods
 ### get

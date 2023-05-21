@@ -16,7 +16,7 @@ RewriteRule ^ index.php [L]
 ```PHP
 require('Jrouter.php');
 Route::get('/home',function(){
-    echo 'Home';
+    include('home.php');
 });
 
 Route::get('/profile','profile.php');
